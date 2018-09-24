@@ -1,6 +1,8 @@
 <!doctype html>
 <html>
 <head>
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Notable|Noto+Serif+KR" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Noto+Serif+KR" rel="stylesheet">
 	<title>MMP 350 App</title>
 	<meta charset="utf-8">
 	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-app.js"></script>
@@ -22,53 +24,61 @@
 </head>
 <body>
 	
-	<div id="container">
-		<div id="header">
-			<h1>MMP 350 Website</h1>
-			<div id="auth">
-				<input type="text" id="username" placeholder="Username">
-				<input type="text" id="email" placeholder="Email">
-				<input type="password" id="password" placeholder="Password">
-				<button id="sign-up">Sign Up</button>
-				<button id="login">Log In</button>
-				<button id="logout">Log Out</button>
-			</div>
-		</div>
-		<div id="main">
+<div id="container">
+
+	    <div id="header">
+		<h3 align="center" >WELCOME</h3>
+		<h3 align="center">Weight Everyday</h3>
+        </div>
+
 			
-			<div id="write-post">
-				<textarea id="post-body" placeholder="What's happening?"></textarea>
-				<br>
-				<button id="submit-post">Publish</button>
-			</div>
 			
-			<div id="posts">
-				<div class="post">
-					<div class="post-text">Hello World!</div>
-					<div class="post-info">
-						by <span class="post-user">Owen</span>
-						on <span class="post-date">Sept 17</span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="sidebar">
-			<ul id="menu">
-				<li>Profile</li>
-				<li>Friends</li>
-				<li>Top Users</li>
-			</ul>
-		</div>
-		<div id="footer">
-			Do we need a footer?
-		</div>
-	</div>
+	   
+	   <div id="main">
+	   <p>TODAY`s waight</p>
+        <input type="text" id="bumber" placeholder="number">
+			<button id="ok">OK</button>
+			
+        
+  	   
+	    </div>
+
 	
-	<!-- <script src="js/data.js"></script> -->
+			
+		
+	<div id="sidebar">
+	<div id="auth">
+			    <button id="sign-up">Sign Up</button>
+				<ul class="demo">
+            <li><input type="text" id="username" placeholder="Username"></li>
+            <li><input type="text" id="email" placeholder="Email">
+            <li><input type="password" id="password" placeholder="Password"></li>
+                </ul>
+
+				 <button id="login">Log In</button>
+				<button id="logout">Log Out</button>
+	</div>
+	</div>
+
+	<div id="footer">
+		<p>MEMO</p>
+		</div>
+		
+
+</div>
+		
+		
+	
+	
+	<!-- <script src="js/data.js"></script> 
+
+
+	
+
+		-->
 	<script src="js/auth.js"></script>
 </body>
 </html>
-	
 	
 	
 	
