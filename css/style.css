@@ -1,1 +1,54 @@
-@import 'layout.css';
+/* #container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+*/ 
+ul.demo {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 120px max-content max-content;
+	grid-template-areas:
+		"header header header sidebar"
+		"main main main main"
+		"footer footer footer footer";
+		
+}
+
+#header {
+	grid-area: header;
+	/*font-family: 'Montserrat', sans-serif;
+	font-family: 'Noto Serif KR', sans-serif;*/
+	font-family: 'Notable', sans-serif;
+font-size: 22px;
+background-color: Gray
+}
+
+	
+	
+
+
+#sidebar {
+	grid-area:sidebar;
+
+	background-color: LightGray
+}
+
+#main { 
+	grid-area: main;
+	font-family: 'Notable', sans-serif;
+	background-color:rgb(181, 181, 181);
+	font-size: 18px;
+
+}
+
+#footer {
+	grid-area: footer;
+	font-family: 'Notable', sans-serif;
+background-color:rgb(105, 105, 105);
+	font-size: 18px;
+}
