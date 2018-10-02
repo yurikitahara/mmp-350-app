@@ -35,7 +35,8 @@ window.addEventListener('load', function() {
 				displayName: userNameAuth.value		
 			};
 			ref.set(userInfo);
-			credential.user.updateProfile(userInfo);
+			credential.user.updateProfile(userInfo)
+				.then(displayUserInfo);
 		});
 		
 		// promise error
