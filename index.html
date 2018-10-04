@@ -1,18 +1,18 @@
 <!doctype html>
 <html>
 <head>
-<link href="https://fonts.googleapis.com/css?family=Montserrat|Notable|Noto+Serif+KR" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Montserrat|Noto+Serif+KR" rel="stylesheet">
-	<title>MMP 350 App</title>
-	<meta charset="utf-8">
-	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-app.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-database.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-auth.js"></script>
-	<script>
+　<title>MMP 350 App</title>
+　<meta charset="utf-8">
+　<meta name="viewport" 　content="width=device-width, initial-     scale=1">
+	<script  src="https://www.gstatic.com/firebasejs/5.4.1/firebase-app.js">     
+    </script>
+	　<script  　　　　src="https://www.gstatic.com/fireba　　　　sejs/5.4.1/firebase- database.js">       </script>
+	　　<script 　　　　　src="https://www.gstatic.com/fire　　　　　basejs/5.4.1/firebase-auth.js">     　　　</script>
+	　　　<script>
 	  // Initialize Firebase
-	  var config = {
-		apiKey: "AIzaSyDI4Jgq9ucsGqRiuAwNV1tcpHYrRF5ka0Q",
-		authDomain: "mmp350-f3934.firebaseapp.com",
+	  　　var config = {
+		　apiKey: 　　　　　"AIzaSyDI4Jgq9ucsGqRiuAwNV1tcpHYr　　　　　RF5ka0Q",
+		authDomain: "mmp350-　　　　      f3934.firebaseapp.com",
 		databaseURL: "https://mmp350-f3934.firebaseio.com",
 		projectId: "mmp350-f3934",
 		storageBucket: "mmp350-f3934.appspot.com",
@@ -24,54 +24,46 @@
 </head>
 <body>
 	
-<div id="container">
+	<div id="container">
+		<div id="header">
+			<h3 align="center" >WELCOME TO</h3>
+            <h3 align="center">MMP 350</h3>
+			<div id="auth">
+				<input type="text" id="username" placeholder="Username">
+				<input type="text" id="email" placeholder="Email">
+				<input type="password" id="password" placeholder="Password">
+				<button id="sign-up">Sign Up</button>
+				<button id="login">Log In</button>
+			</div>
+			<div id="user-info" style="display:none">
+				<span id="display-name"></span>
+				<button id="logout">Log Out</button>
+			</div>
+		</div>
+		<div id="main">
 
-	    <div id="header">
-		<h3 align="center" >WELCOME TO</h3>
-		<h3 align="center">MMP 350</h3>
+            <p>Tweet here</p>
+	 
+            <input type="text" id="post-body" placeholder="What`s happning?">
+			<button id="submit-post">Publish</button>
+            
+            <div id="posts">
+				
+			</div>
         </div>
 
-			
-			
-	   
-<div id="main">
-    <p>Tweet here</p>
-    
-	 
-        <input type="text" id="bumber" placeholder="What`s happning?">
-			<button id="ok">Publish</button>
-			
-        
-  	   
-</div>
-
-	
-			
-		
-	<div id="sidebar">
-	<div id="auth">
-			    <button id="sign-up">Sign Up</button>
-				<ul class="demo">
-            <li><input type="text" id="username" placeholder="Username"></li>
-            <li><input type="text" id="email" placeholder="Email">
-            <li><input type="password" id="password" placeholder="Password"></li>
-                </ul>
-
-				 <button id="login">Log In</button>
-				<button id="logout">Log Out</button>
-	</div>
-	</div>
+		<div id="sidebar">
+			<ul id="menu">
+				<li>Profile</li>
+				<li>Friends</li>
+				<li>Top Users</li>
+			</ul>
+		</div>
 
 	<div id="footer">
 		<p>MEMO</p>
-		</div>
-		
-
+	</div>
 </div>
-		
-		
-	
-	
 	<!-- <script src="js/data.js"></script> 
 
 
@@ -79,6 +71,14 @@
 
 		-->
 	<script src="js/auth.js"></script>
+	<script src="js/publish.js"></script>
+	<script src="js/posts.js">
+    </script>
+    
+    
+    
+    
+    
 </body>
 </html>
 	

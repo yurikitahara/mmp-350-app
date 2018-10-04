@@ -11,7 +11,7 @@ ul.demo {
 #container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 120px max-content max-content;
+	grid-template-rows: max-content max-content max-content;
 	grid-template-areas:
 		"header header header sidebar"
 		"main main main main"
@@ -25,9 +25,7 @@ ul.demo {
 	grid-area: header;
 	grid-column: 1 / span 3;
 	grid-row: 1;
-	/*font-family: 'Montserrat', sans-serif;
-	font-family: 'Noto Serif KR', sans-serif;*/
-	font-family: 'Notable', sans-serif;
+	font-family: 'heveltica';
 	font-size: 22px;
 	background-color: Gray
 }
@@ -44,7 +42,7 @@ ul.demo {
 
 #main { 
 	grid-area: main;
-	font-family: 'Notable', sans-serif;
+	font-family: 'heveltica';
 	background-color:rgb(181, 181, 181);
 	font-size: 18px;
 
@@ -52,7 +50,7 @@ ul.demo {
 
 #footer {
 	grid-area: footer;
-	font-family: 'Notable', sans-serif;
+	font-family: 'heveltica';
 	background-color:rgb(105, 105, 105);
 	font-size: 18px;
 }
