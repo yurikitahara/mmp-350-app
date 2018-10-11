@@ -56,7 +56,7 @@ ul.demo {
 }
 
 
-
+/* mobile layout */
 @media (max-width: 400px;) {
 	#container{
 		grid-template-areas:
@@ -64,8 +64,20 @@ ul.demo {
 		"main main main"
 		"footer footer footer"
 	}
+    #sidebar {
+        display: none;
 }
 
-/* mobile layout */
+/* tablet layout */
+@media (min-width: 401px) and (max-width: 800px) {
+	#container {
+		grid-template-areas:
+			"header header header"
+			"main main main"
+			"sidebar sidebar sidebar"
+			"footer footer footer";
+	}
+}
+    
 
 /* tablet layout */
