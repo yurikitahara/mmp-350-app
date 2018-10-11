@@ -31,3 +31,52 @@ body {
 
 /* font pairing 2 */
 
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif&subset=latin-ext');
+
+/*
+	font-family: 'Bree Serif', serif;
+*/
+post .post-text {
+	font-family: 'Bree Serif', serif;
+	font-size: 1.1em;
+}
+
+.post .post-info {
+	font-family: 'Bree Serif', serif;
+	font-size: 0.8em;
+	color: violet;
+}
+
+.post .post-author {
+	color: lightpink;
+}
+
+.post .post-date {
+	font-weight: 700;
+}
+
+/* font pairing 3 */
+@import url('https://fonts.googleapis.com/css?family=Quando&subset=latin-ext');
+/*
+font-family: 'Quando', serif;
+*/
+
+
+post .post-text {
+	font-family: 'Quando', serif;
+	font-size: 1.1em;
+}
+
+.post .post-info {
+	font-family: 'Quando', serif;
+	font-size: 0.8em;
+	color: paleturquoise;
+}
+
+.post .post-author {
+	color: olivedrab;
+}
+
+.post .post-date {
+	font-weight: 500;
+}
