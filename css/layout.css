@@ -25,9 +25,9 @@ ul.demo {
 	grid-area: header;
 	grid-column: 1 / span 3;
 	grid-row: 1;
-	font-family: 'heveltica';
+	font-family: 'times';
 	font-size: 22px;
-	background-color: Gray
+	background-color: Lavender;
 }
 
 	
@@ -37,21 +37,21 @@ ul.demo {
 #sidebar {
 	grid-area:sidebar;
 
-	background-color: LightGray
+	background-color: lightcyan
 }
 
 #main { 
 	grid-area: main;
-	font-family: 'heveltica';
-	background-color:rgb(181, 181, 181);
+	font-family: 'times';
+	background-color:rgb(251, 255, 230);
 	font-size: 18px;
 
 }
 
 #footer {
 	grid-area: footer;
-	font-family: 'heveltica';
-	background-color:rgb(105, 105, 105);
+	font-family: 'times';
+	background-color:rgb(255, 230, 204);
 	font-size: 18px;
 }
 
