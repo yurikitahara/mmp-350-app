@@ -18,11 +18,11 @@ body {
 .post .post-info {
 	font-family: 'Charmonman', cursive;
 	font-size: 0.8em;
-	color: gray;
+	/*color: gray;*/
 }
 
 .post .post-author {
-	color: blue;
+	/*color: blue;*/
 }
 
 .post .post-date {
@@ -44,11 +44,11 @@ post .post-text {
 .post .post-info {
 	font-family: 'Bree Serif', serif;
 	font-size: 0.8em;
-	color: violet;
+	/*color: violet;*/
 }
 
 .post .post-author {
-	color: lightpink;
+	c/*olor: lightpink;*/
 }
 
 .post .post-date {
@@ -70,11 +70,11 @@ post .post-text {
 .post .post-info {
 	font-family: 'Quando', serif;
 	font-size: 0.8em;
-	color: paleturquoise;
+	/*color: paleturquoise;*/
 }
 
 .post .post-author {
-	color: olivedrab;
+	/*color: olivedrab;*/
 }
 
 .post .post-date {
@@ -89,5 +89,5 @@ h3 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
-    background-color:rgba(0,0,255,0.3);
+   
 }
