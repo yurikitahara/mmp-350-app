@@ -1,0 +1,41 @@
+/*Monochromatic*/
+.posts{
+--hue:134;
+--sat:40;
+--lit:60;
+--main: hsl(var(--hue), calc(var(--sat)*1%),calc(var(--lit)*1%));
+    
+--saturation: calc(var(--sat) + 20);
+--one; hsl(calc(var(--hue)),calc(var(--saturation) * 1%),
+calc(var(--lit) * 1%));;
+    
+--lightness: calc(var(--lit)-20);
+--two: hsl(cals(var(--hue)), calc(var(--sat)* 1%),
+ calc(var(--lightness) * 1%));; 
+}
+    
+.posts .post{
+    border: 2px solid var(--main);
+}
+.posts .post-text {
+     color: var(--one);
+}
+.posts .post-author, .posts .post-date{
+     color: var(--two);
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    }
