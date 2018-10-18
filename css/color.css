@@ -1,69 +1,40 @@
 /*Monochromatic*/
-#posts {
---hue:394;
---sat:30;
---lit:60;
---main: hsl(var(--hue), calc(var(--sat)*1%),calc(var(--lit)*1%));
- 
-    /*update saturation in one*/
---saturation:calc(var(--sat) + 90);
---one: hsl(calc(var(--hue)),calc(var(--saturation) * 1%),
-calc(var(--lit) * 1%));;
-    
-    /*change lightness in two*/
---lightness: calc(var(--lit) + 5);
---two: hsl(calc(var(--hue)), calc(var(--sat)* 1%),
- calc(var(--lightness) * 1%));; 
-     
+
+body {
+    --hue: 34;
+    --sat: 30;
+    --lit: 60;
+    --main: hsl(var(--hue), calc(var(--sat)*1%), calc(var(--lit)*1%));
+    --header: hsl(var(--hue), 60%, 30%);
+    --sidebar-hue: calc(var(--hue) - 60);
+    --sidebar: hsl(var(--sidebar-hue), 60%, 60%);
+    --footer-hue: calc(var(--hue) + 60);
+    --footer: hsl(var(--footer-hue), 60%, 60%);
 }
-    
-#posts .post{
+
+#posts .post {
     border: 2px solid var(--main);
 }
+
 #posts .post-text {
     color: var(--one);
 }
-#posts .post-author, .posts .post-date{
-     color: var(--two);
-}
-    
-#header { 
---hue:394;
---sat:90;
---lit:30;
---main: hsl(var(--hue), calc(var(--sat)*1%),calc(var(--lit)*1%));
- 
-    /*update saturation in one*/
---saturation:calc(var(--sat) + 90);
---one: hsl(calc(var(--hue)),calc(var(--saturation) * 1%),
-calc(var(--lit) * 1%));;
-    
-    /*change lightness in two*/
---lightness: calc(var(--lit) + 5);
---two: hsl(calc(var(--hue)), calc(var(--sat)* 1%),
- calc(var(--lightness) * 1%));; 
-     
-}
-#header {
- color: var(--one);}
 
-#sidebar
-    { 
---hue:694;
---sat:60;
---lit:60;
---main: hsl(var(--hue), calc(var(--sat)*1%),calc(var(--lit)*1%));
- 
-    /*update saturation in one*/
---saturation:calc(var(--sat) + 90);
---one: hsl(calc(var(--hue)),calc(var(--saturation) * 1%),
-calc(var(--lit) * 1%));;
-    
-    /*change lightness in two*/
---lightness: calc(var(--lit) + 5);
---two: hsl(calc(var(--hue)), calc(var(--sat)* 1%),
- calc(var(--lightness) * 1%));; 
-     
+#posts .post-author,
+.posts .post-date {
+    color: var(--two);
 }
+
+#header {
+    color: var(--header);
+}
+
+#sidebar {}
+
 #sidebar {
- color: var(--two);}
+    color: var(--sidebar);
+}
+
+#footer {
+    color: var(--footer);
+}
