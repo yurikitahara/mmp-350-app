@@ -10,12 +10,12 @@ body {
     --sidebar: hsl(var(--sidebar-hue), 60%, 60%);
     --footer-hue: calc(var(--hue) + 60);
     --footer: hsl(var(--footer-hue), 60%, 60%);
-}
+  
 
 #posts .post {
     border: 2px solid var(--main);
 }
-
+    
 #posts .post-text {
     color: var(--one);
 }
@@ -29,7 +29,7 @@ body {
     color: var(--header);
 }
 
-#sidebar {}
+
 
 #sidebar {
     color: var(--sidebar);
@@ -38,3 +38,10 @@ body {
 #footer {
     color: var(--footer);
 }
+        
+
+        
+    
+   
+
+    -
