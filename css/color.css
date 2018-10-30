@@ -1,5 +1,4 @@
 /*Monochromatic*/
-/* did it save? */
 body {
     --hue: 240;
     --sat: 50;
@@ -39,5 +38,3 @@ body {
 #footer {
     color: var(--footer);
 }
-
--
