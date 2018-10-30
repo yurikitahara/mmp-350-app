@@ -1,21 +1,24 @@
 /*Monochromatic*/
 
 body {
-    --hue: 34;
-    --sat: 30;
-    --lit: 60;
+    --hue: 240;
+    --sat: 50;
+    --lit: 50;
     --main: hsl(var(--hue), calc(var(--sat)*1%), calc(var(--lit)*1%));
     --header: hsl(var(--hue), 60%, 30%);
     --sidebar-hue: calc(var(--hue) - 60);
     --sidebar: hsl(var(--sidebar-hue), 60%, 60%);
     --footer-hue: calc(var(--hue) + 60);
     --footer: hsl(var(--footer-hue), 60%, 60%);
-  
+}
 
 #posts .post {
     border: 2px solid var(--main);
+    --saturation: calc(var(--sat) + 20);
+    --one: hsl(calc(var(--hue)), calc(var(--saturation) * 1%), calc(var(--lit) * 1%));
+    ;
 }
-    
+
 #posts .post-text {
     color: var(--one);
 }
@@ -29,8 +32,6 @@ body {
     color: var(--header);
 }
 
-
-
 #sidebar {
     color: var(--sidebar);
 }
@@ -38,10 +39,5 @@ body {
 #footer {
     color: var(--footer);
 }
-        
 
-        
-    
-   
-
-    -
+-
